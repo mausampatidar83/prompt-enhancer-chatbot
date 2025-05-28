@@ -77,7 +77,7 @@ export default function ChatBot() {
       >
         {loading ? "Enhancing..." : "Enhance Prompt"}
       </button>
-       <button className="px-4 py-2 m-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+       <button className="px-4 py-2  mx-5 bg-blue-600 text-white rounded hover:bg-blue-700"
                 onClick={
                     textarea => {
                         setPrompt("");
@@ -88,8 +88,8 @@ export default function ChatBot() {
                     }>Clear</button>
 
       {enhancedPrompt && (
-        <div className="p-4 border rounded bg-gray-300 space-y-2">
-          <div className="flex justify-between items-center">
+        <div className="p-4 border text-center rounded bg-gray-300 space-y-2">
+          <div className="flex justify-evenly  items-center">
             <strong>Enhanced Prompt:</strong>
             <button
               onClick={copyToClipboard}
