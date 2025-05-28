@@ -89,7 +89,7 @@ export default function ChatBot() {
 
       {enhancedPrompt && (
         <div className="p-4 border text-center rounded bg-gray-300 space-y-2">
-          <div className="flex justify-evenly  items-center">
+          <div className="flex justify-between  items-center">
             <strong>Enhanced Prompt:</strong>
             <button
               onClick={copyToClipboard}
